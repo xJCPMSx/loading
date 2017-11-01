@@ -1,5 +1,6 @@
 # Loading
-Tela de loading feita para carregamento inicial do site. **[DEMO](http://wdmarkus.com/freebies/loading/)**
+Tela de loading feita para carregamento inicial do site.<br/>
+**[Clique aqui para ver o demo](http://wdmarkus.com/freebies/loading/)**
 
 ## Classes
 **.loadingaberto**<br/>
