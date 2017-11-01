@@ -1,0 +1,91 @@
+// Imports
+@import _media
+@import _mixin
+@import _reset
+
+.loadingaberto
+    overflow: hidden
+    @media #{$notebook}, #{$desktop}
+        padding-right: 15px
+    main
+        & > div,
+        & > section,
+        & > aside,
+        & > footer,
+        & > header
+            overflow: hidden
+
+.loading
+    z-index: 10
+    background: #0d4b8a
+    position: fixed
+    top: 0
+    width: 100%
+    bottom: -1px
+    left: 0
+    text-align: center
+    overflow: hidden
+.logo-loading
+    position: fixed
+    top: 50%
+    left: 50%
+    z-index: 11
+    @media #{$celular}, #{$celularh}
+        margin-left: -70px
+        margin-top: -70px
+    @media #{$tablet}, #{$notebook}
+        margin-left: -90px
+        margin-top: -130px
+    @media #{$desktop}
+        margin-left: -105px
+        margin-top: -145px
+    img
+        @media #{$celular}, #{$celularh}
+            width: 140px
+        @media #{$tablet}, #{$notebook}
+            width: 180px
+        @media #{$desktop}
+            width: 210px
+.icone-loading
+    position: fixed
+    z-index: 11
+    top: 50%
+    left: 50%
+    display: inline-block
+    @include prefix(border-radius, 50%, webkit ms moz o)
+    animation: girar 1s linear infinite
+    border-top-color: #FFF
+    border-top-style: solid
+    @media #{$celular}, #{$celularh}
+        margin-top: 25px
+        border-top-width: 2px
+        border-right: 2px solid transparent
+        margin-left: -18px
+        width: 36px
+        height: 36px
+    @media #{$tablet}, #{$notebook}
+        margin-top: 25px
+        border-top-width: 2px
+        border-right: 2px solid transparent
+        margin-left: -20px
+        width: 40px
+        height: 40px
+    @media #{$desktop}
+        margin-top: 30px
+        border-top-width: 3px
+        border-right: 3px solid transparent
+        margin-left: -23px
+        width: 46px
+        height: 46px
+
+@-webkit-keyframes girar
+    0%
+        @include prefix(transform, rotate(0deg), webkit ms moz o)
+    100%
+        @include prefix(transform, rotate(360deg), webkit ms moz o)
+
+@keyframes girar
+    0%
+        @include prefix(transform, rotate(0deg), webkit ms moz o)
+    100%
+        @include prefix(transform, rotate(360deg), webkit ms moz o)
