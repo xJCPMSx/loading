@@ -1,5 +1,5 @@
 # Loading
-Tela de loading feita para carregamento inicial do site.
+Tela de loading feita para carregamento inicial do site. **[DEMO](http://wdmarkus.com/freebies/loading/)**
 
 ## Classes
 **.loadingaberto**<br/>
@@ -15,7 +15,6 @@ Logo.
 Circulo de loading animado.
 
 > Após alguns testes, tive melhores resultados deixando os elementos separados. Aconselho não colocar a .logo-loading e o .icone-loading dentro do .loading.
-
 
 ## Arquivos
 **loading.css**<br/>
