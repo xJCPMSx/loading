@@ -2,7 +2,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0
     padding: 0
     border: 0
-    font-size: 100%
+    font-size: 100% 
     font: inherit
     vertical-align: baseline
 
@@ -12,7 +12,7 @@ footer, header, hgroup, menu, nav, section
 
 ol, ul
     list-style: none
-    @include clearfix
+    overflow: hidden
 
 blockquote, q
     quotes: none
@@ -34,7 +34,11 @@ body
     line-height: 1
 
 *
-    @include prefix(box-sizing, border-box, webkit ms moz o)
+    -webkit-box-sizing: border-box
+    -ms-box-sizing: border-box
+    -moz-box-sizing: border-box
+    -o-box-sizing: border-box
+    box-sizing: border-box
 
 button
     outline: 0
@@ -48,10 +52,6 @@ img
 
 button, input, select, textarea
     outline: none
-
-input,
-textarea
-    // -webkit-appearance: none
 
 textarea
     resize: none

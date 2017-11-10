@@ -23,3 +23,6 @@ Este arquivo deve conter apenas o que for referente a tela de loading. Quanto me
 
 **loading.js**<br/>
 Script para fazer o fechamento da tela de loading. Este script pode ser chamado no fechamento do body também e junto com o restante dos scripts do site.
+
+## Como funciona
+O site deve iniciar com a classe **.loadingaberto** no body, e via jQuery ela será removida após o carregamento completo da página. Isso me permite manipular qualquer tag enquanto o loading estiver ativo.

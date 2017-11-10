@@ -11,11 +11,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 ol, ul {
-  list-style: none; }
-  ol:after, ul:after {
-    content: "";
-    display: table;
-    clear: both; }
+  list-style: none;
+  overflow: hidden; }
 
 blockquote, q {
   quotes: none; }
@@ -65,12 +62,24 @@ em {
 main {
   display: block; }
 
+#content {
+  margin: 100px auto 100px;
+  width: 50%;
+  font-family: "Poiret One", cursive;
+  text-align: center; }
+  #content h1 {
+    font-size: 42px;
+    margin-bottom: 20px; }
+  #content p {
+    font-size: 20px;
+    line-height: 2.3; }
+
 .loadingaberto {
   overflow: hidden; }
   @media (min-width: 990px) and (max-width: 1399px), (min-width: 1400px) {
     .loadingaberto {
       padding-right: 15px; } }
-  .loadingaberto main > div, .loadingaberto main > section, .loadingaberto main > aside, .loadingaberto main > footer, .loadingaberto main > header {
+  .loadingaberto main {
     overflow: hidden; }
 
 .loading {
